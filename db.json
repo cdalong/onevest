@@ -1,0 +1,42 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Multiple Posts"
+    },
+    {
+      "id": 2,
+      "name": "One Post"
+    },
+    {
+      "id": 3,
+      "name": "No Associated Posts"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "author": 1,
+      "content": "",
+      "postDate": "2021-11-09T12:00:01.000Z"
+    },
+    {
+      "id": 2,
+      "author": 2,
+      "content": "This is a content of a post",
+      "postDate": "1993-11-09T12:00:01.000Z"
+    },
+    {
+      "id": 3,
+      "author": 1,
+      "content": "The other post has no content",
+      "postDate": "2021-11-10T12:00:01.000Z"
+    },
+    {
+      "id": 4,
+      "author": 56,
+      "content": "The other post has no valid author",
+      "postDate": "2021-11-10T12:00:01.000Z"
+    }
+  ]
+}

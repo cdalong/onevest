@@ -1,2 +1,8 @@
-# onevest
-Simple GraphQL Federated Data Server
+# Apollo Space Camp Demo Code
+
+**Installation:**
+
+```sh
+npm i && npm run server
+```
+
