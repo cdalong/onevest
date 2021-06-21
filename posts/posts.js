@@ -9,13 +9,14 @@ const typeDefs = gql`
 
   type Posts {
     id: ID!
-    author: User
+    author: User @provides (fields: "name")
     content: String
     postDate: String
   }
 
   extend type User @key(fields: "id") {
     id: ID! @external
+    name: String @external
     fetchAllPosts: [Posts]
   }
 
@@ -34,6 +35,15 @@ const resolvers = {
       return posts.filter(({ author }) =>
         author == (parseInt(user.id))
       );
+    }
+  },
+  User: {
+    async fetchUser(posts) {
+      const res = await fetch(`${apiUrl}/users`);
+      const users = await res.json();
+      return users.filter(({ posts }) =>
+      users.author == (posts.name)
+    );
     }
   },
   Query: {

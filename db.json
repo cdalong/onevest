@@ -16,7 +16,7 @@
   "posts": [
     {
       "id": 1,
-      "author": 1,
+      "author": "Multiple Posts",
       "content": "",
       "postDate": "2021-11-09T12:00:01.000Z"
     },
